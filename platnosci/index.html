@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Płatności telefonem: gdy nie działa · AmouNTHILL</title>
+<meta name="description" content="Krok po kroku: co sprawdzić, gdy płatności telefonem nie zapisują się w AmouNTHILL.">
+<style>
+  :root {
+    --bg: #5A4232; --surface: #4C3829; --high: #6A4F3D;
+    --ink: #FBF6EC; --muted: #D3C2AC; --accent: #A9C98E; --on-accent: #2E2A24;
+    --cut: 8px;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.55 Figtree, system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .lead { color: var(--muted); margin: 0 0 28px; }
+  details {
+    background: var(--surface); margin: 0 0 12px;
+    clip-path: polygon(12px 0, calc(100% - 12px) 0, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px), 0 12px);
+  }
+  summary {
+    cursor: pointer; list-style: none; padding: 16px 18px;
+    font-weight: 700; font-size: 18px; display: flex; align-items: center; gap: 12px;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "▾"; margin-left: auto; color: var(--muted); transition: transform .2s; }
+  details[open] summary::after { transform: rotate(180deg); }
+  .hex {
+    width: 30px; height: 34px; flex-shrink: 0; background: var(--accent); color: var(--on-accent);
+    display: grid; place-items: center; font-size: 14px; font-weight: 800;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  .body { padding: 0 18px 18px; }
+  ol { margin: 0; padding-left: 22px; }
+  li { margin: 0 0 10px; }
+  li::marker { color: var(--accent); font-weight: 700; }
+  b { color: var(--ink); }
+  .path { color: var(--muted); }
+  a { color: var(--accent); font-weight: 700; }
+  .note {
+    background: var(--high); padding: 12px 14px; margin: 12px 0 0; color: var(--ink);
+    clip-path: polygon(var(--cut) 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, var(--cut) 100%, 0 calc(100% - var(--cut)), 0 var(--cut));
+  }
+  h2 { font-size: 15px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 32px 0 12px; }
+  footer { color: var(--muted); font-size: 14px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Płatności telefonem: gdy nie działa</h1>
+  <p class="lead">Najpierw w aplikacji: Ustawienia, potem Płatności telefonem i „Wyślij testowe powiadomienie”. Komunikat po teście mówi, od którego punktu zacząć.</p>
+
+  <h2>Android</h2>
+
+  <details open>
+    <summary><span class="hex">1</span>Każdy telefon z Androidem</summary>
+    <div class="body">
+      <ol>
+        <li><b>Dostęp do powiadomień.</b> W wyszukiwarce Ustawień wpisz „dostęp do powiadomień”, znajdź AmouNTHILL i włącz. Jeśli już był włączony, wyłącz go i włącz ponownie: po aktualizacji aplikacji potrafi się zawiesić.</li>
+        <li><b>Przełącznik wyszarzony?</b> <span class="path">Ustawienia, Aplikacje, AmouNTHILL, menu ⋮ w rogu, „Zezwól na ograniczone ustawienia”.</span> Android tak blokuje aplikacje zainstalowane spoza sklepu. Potem wróć do punktu 1.</li>
+        <li><b>Powiadomienia samej aplikacji.</b> <span class="path">Ustawienia, Aplikacje, AmouNTHILL, Powiadomienia</span>: włączone. Bez tego testowe powiadomienie się nie wyśle.</li>
+        <li><b>Bateria.</b> <span class="path">Ustawienia, Aplikacje, AmouNTHILL, Bateria</span>: „Bez ograniczeń”.</li>
+        <li><b>Google Wallet.</b> Po płatności na pasku musi pojawić się powiadomienie Google Wallet. Jeśli go nie ma, sprawdź <span class="path">Ustawienia, Aplikacje, Google Wallet, Powiadomienia</span>.</li>
+        <li><b>Test.</b> Zamknij AmouNTHILL całkiem, otwórz ponownie i wyślij testowe powiadomienie. Gdy nie dotrze, dotknij „Połącz ponownie”.</li>
+      </ol>
+      <p class="note">Wpis „Inne” z kwotą 0 zł i notatką „Android ukrył kwotę i sklep” znaczy, że wszystko działa, tylko system ukrył treść powiadomienia. Dopisz wtedy kwotę ręcznie.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><span class="hex">2</span>Xiaomi, Redmi, POCO</summary>
+    <div class="body">
+      <ol>
+        <li>Zrób najpierw kroki z punktu 1.</li>
+        <li><b>Autostart.</b> W aplikacji: Ustawienia, Płatności telefonem, „Otwórz autostart” i włącz AmouNTHILL na liście. Ręcznie: <span class="path">Ustawienia, Aplikacje, Zarządzaj aplikacjami, AmouNTHILL, Autostart</span>. Bez tego system wyłącza nasłuchiwanie w tle i płatności przepadają.</li>
+        <li><b>Oszczędzanie baterii.</b> W tym samym ekranie: Oszczędzanie baterii, „Bez ograniczeń”.</li>
+        <li><b>Kłódka.</b> Otwórz listę ostatnich aplikacji, przytrzymaj AmouNTHILL i dotknij kłódki, żeby czyszczenie pamięci jej nie zamykało.</li>
+        <li><b>Dostęp do powiadomień</b> bywa w <span class="path">Ochrona prywatności, Specjalne uprawnienia</span>. Najprościej wpisać „dostęp do powiadomień” w wyszukiwarkę Ustawień.</li>
+      </ol>
+      <p class="note"><b>Raz działa, raz nie?</b> Tak wygląda system, który co jakiś czas odłącza nasłuchiwanie. Aplikacja sama sprawdza je co kwadrans i po każdym otwarciu, i podłącza z powrotem. Jeśli płatność nie wpadła: otwórz AmouNTHILL, odczekaj kilka sekund i wyślij testowe powiadomienie. Gdy test przechodzi, a płatności dalej znikają, wróć do autostartu i kłódki.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><span class="hex">3</span>Samsung</summary>
+    <div class="body">
+      <ol>
+        <li>Zrób najpierw kroki z punktu 1.</li>
+        <li><b>Bateria.</b> <span class="path">Ustawienia, Aplikacje, AmouNTHILL, Bateria</span>: „Bez ograniczeń”.</li>
+        <li><b>Usypianie.</b> <span class="path">Ustawienia, Bateria (albo Pielęgnacja urządzenia), Limity użycia w tle</span>: AmouNTHILL nie może być na liście „Uśpione” ani „Głęboko uśpione”. Dodaj ją do „Nigdy nieusypiane”.</li>
+        <li><b>Portfel.</b> Aplikacja czyta powiadomienia Google Wallet. Karta musi być dodana tam, a nie tylko w Samsung Wallet.</li>
+      </ol>
+      <p class="note">Nazwy menu w tym punkcie mogą się różnić zależnie od wersji systemu. Gdy czegoś nie ma, wpisz nazwę w wyszukiwarkę Ustawień.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><span class="hex">4</span>OPPO, realme, OnePlus, vivo, Honor</summary>
+    <div class="body">
+      <ol>
+        <li>Zrób najpierw kroki z punktu 1.</li>
+        <li><b>Autostart</b> albo „Zezwalaj na automatyczne uruchamianie” w ustawieniach aplikacji AmouNTHILL: włączone.</li>
+        <li><b>Bateria:</b> „Zezwalaj na działanie w tle” albo „Bez ograniczeń”.</li>
+        <li><b>Kłódka</b> na liście ostatnich aplikacji, jak na Xiaomi.</li>
+      </ol>
+      <p class="note">Nazwy menu w tym punkcie mogą się różnić zależnie od producenta i wersji systemu. Gdy czegoś nie ma, wpisz nazwę w wyszukiwarkę Ustawień.</p>
+    </div>
+  </details>
+
+  <h2>iPhone</h2>
+
+  <details>
+    <summary><span class="hex">5</span>Automatyzacja w Skrótach</summary>
+    <div class="body">
+      <ol>
+        <li><b>Gotowy skrót.</b> <a href="https://www.icloud.com/shortcuts/36db44df1b4a46afa737d84544849d07">Pobierz skrót AmouNTHILL</a>, a potem w Skrótach, w zakładce Automatyzacja, dodaj automatyzację Wallet, która go uruchamia.</li>
+        <li><b>Karty.</b> W automatyzacji Wallet są zaznaczone karty, którymi płacisz.</li>
+        <li><b>Uruchom natychmiast.</b> Inaczej automatyzacja czeka na potwierdzenie i przy kasie nic się nie dzieje.</li>
+        <li><b>Pola.</b> Kwota, Sprzedawca, Karta i Waluta podpięte z danych wejściowych skrótu. Brak kwoty pokaże sekcja „Sprawdź” w aplikacji.</li>
+        <li><b>Nie widać akcji „Zapisz płatność”?</b> Otwórz raz AmouNTHILL i wróć do Skrótów.</li>
+        <li><b>Rodzaj płatności.</b> Zapisują się płatności zbliżeniowe telefonem lub zegarkiem. Zakupy w internecie i w aplikacjach nie uruchamiają automatyzacji.</li>
+      </ol>
+    </div>
+  </details>
+
+  <footer>AmouNTHILL · budżet domowy</footer>
+</main>
+</body>
+</html>

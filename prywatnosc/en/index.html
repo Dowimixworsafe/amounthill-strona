@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AmouNTHILL Privacy Policy</title>
+<style>
+  :root {
+    --bg: #5A4232; --surface: #4C3829; --high: #6A4F3D;
+    --ink: #FBF6EC; --muted: #D3C2AC; --accent: #A9C98E; --on-accent: #2E2A24;
+    --cut: 8px;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.55 Figtree, system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .lead { color: var(--muted); margin: 0 0 28px; }
+  details {
+    background: var(--surface); margin: 0 0 12px;
+    clip-path: polygon(12px 0, calc(100% - 12px) 0, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px), 0 12px);
+  }
+  summary {
+    cursor: pointer; list-style: none; padding: 16px 18px;
+    font-weight: 700; font-size: 18px; display: flex; align-items: center; gap: 12px;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "▾"; margin-left: auto; color: var(--muted); transition: transform .2s; }
+  details[open] summary::after { transform: rotate(180deg); }
+  .hex {
+    width: 30px; height: 34px; flex-shrink: 0; background: var(--accent); color: var(--on-accent);
+    display: grid; place-items: center; font-size: 14px; font-weight: 800;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  .body { padding: 0 18px 18px; }
+  ol { margin: 0; padding-left: 22px; }
+  li { margin: 0 0 10px; }
+  li::marker { color: var(--accent); font-weight: 700; }
+  b { color: var(--ink); }
+  .path { color: var(--muted); }
+  a { color: var(--accent); font-weight: 700; }
+  .note {
+    background: var(--high); padding: 12px 14px; margin: 12px 0 0; color: var(--ink);
+    clip-path: polygon(var(--cut) 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, var(--cut) 100%, 0 calc(100% - var(--cut)), 0 var(--cut));
+  }
+  h2 { font-size: 15px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 32px 0 12px; }
+  footer { color: var(--muted); font-size: 14px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<main>
+<p><a href="../">Polski</a></p>
+<h1>AmouNTHILL Privacy Policy</h1>
+<p>Effective from 31 October 2026.</p>
+<p>This policy explains what data the AmouNTHILL app processes, why, where it goes and what rights you have. We keep it plain wherever we can. One rule comes first: <strong>your finances are yours</strong>. Most data stays on your phone, and we send out only what a feature you use actually needs.</p>
+<h2>1. Data controller</h2>
+<p>The controller of your personal data is Dominik Lipiński. For anything about privacy, including exercising your rights, write to <strong>domlip12@icloud.com</strong>.</p>
+<h2>2. Data that stays on your phone</h2>
+<p>Without signing in, the app runs entirely on your device. The database on your phone stores:</p>
+<ul>
+<li>entries: expenses, income, savings, amounts, dates, categories, notes and shop names,</li>
+<li>categories, limits, goals, recurring rules, fixed costs and calendar events,</li>
+<li>savings jars, including the account type, bonds and ETFs with the number of units,</li>
+<li>receipts stored as data (shop, items, amounts), not as photos,</li>
+<li>app settings such as language, currency, billing cycle and reminder times.</li>
+</ul>
+<p>We cannot see or access this data unless you turn on sync.</p>
+<h2>3. Account and cloud sync</h2>
+<p>If you sign in with a Google account, your ledger syncs with the server so it works on several devices, survives a phone change and enables a shared budget.</p>
+<ul>
+<li><strong>What data:</strong> your Google account email and identifier, plus all ledger data listed in section 2.</li>
+<li><strong>Where:</strong> on Supabase servers in the European Union (Paris region).</li>
+<li><strong>Legal basis:</strong> performance of a contract, i.e. providing the service you ask for (Art. 6(1)(b) GDPR).</li>
+<li><strong>How long:</strong> until you delete your account. Deleting the account in Settings removes your data from the server.</li>
+</ul>
+<p>Google handles sign-in. When you sign in, Google gives us your email address and account identifier, and you can revoke access at any time in your Google account settings.</p>
+<h2>4. Shared budget</h2>
+<p>When you invite household members or join someone else's budget, all members see shared entries together with who added them (the name you provide). Entries and categories marked as private are visible only to their author. When the owner deletes their account, members receive a copy of the entries they added themselves.</p>
+<h2>5. AI features</h2>
+<p>Some features use Google's Gemini language model. Requests always go through our server, and the service key never reaches your phone.</p>
+<ul>
+<li><strong>Receipts, order screenshots and invoices:</strong> the text is recognised on your phone (Apple or Google on-device text recognition). We send the AI <strong>only the recognised text</strong> and the list of your categories, never the photo itself. The photo stays in temporary storage until the form closes, unless you save it to your gallery.</li>
+<li><strong>Dictated entries:</strong> when a category cannot be matched on the phone, we send the dictated text and the list of categories to the AI.</li>
+<li><strong>Chat with Mou (premium):</strong> only with your consent, when you ask Mou a question we send it together with a summary of your data: spending, income and savings totals for the last 6 months, spending totals by category, entries from this and last month (date, amount, category, note), recurring entries, savings jar balances, values and goals (for bonds and instruments also their type, number of units, price and gain), category names and limits, plus the last few messages of the conversation so Mou understands the context. We also send how Mou should address you (masculine, feminine or neutral forms) if you choose one. When you talk to Mou by voice, we send her answer once more to the same AI model so it can read it aloud; we do not store the recordings. We do not send private entries, shop names or receipt photos. You can withdraw consent in Settings. Your conversation history with Mou stays only on your phone, in the ledger data: conversations older than 90 days are deleted automatically, and you can delete a single conversation or the whole history yourself in the app. If you turn on “Help improve Mou” in Settings (off by default), we store on our server your questions, Mou's answers with the cards and changes she suggested, and whether you saved, edited or undid a change, without the data summary, to improve Mou. We keep them for 90 days; turning the switch off deletes them immediately, and all of them are deleted together with your account. When you rate a Mou answer with a thumb, we store on our server the question, the answer, the rating and any comment (without the data summary) to improve Mou; we delete them together with your account.</li>
+<li><strong>Unknown broker report:</strong> only with your consent, we send a sample of the file (sheet names and first rows) with long numbers, email addresses and name fields masked. We keep the sample until we add support for your report.</li>
+</ul>
+<p>Apart from rated Mou answers and conversations stored after you turn on “Help improve Mou”, we do not store the content of AI requests. We store only a usage counter (day, task type, count) to enforce free-plan limits. Google processes the text to generate a response under the Gemini API terms. We use the paid version of this service, in which Google does not use the submitted content to train or improve its models. To use AI without signing in, we create an anonymous technical account that holds no data about you.</p>
+<p>The legal basis is performance of a contract (Art. 6(1)(b) GDPR) and, for the chat with Mou and the report sample, your consent (Art. 6(1)(a) GDPR).</p>
+<h2>6. Speech recognition</h2>
+<p>Dictation uses your phone's system speech recognition: Apple on iPhone, Google on Android. Depending on the device and language, audio may be processed on the phone or on Apple or Google servers, under their privacy policies. The app does not store recordings, only the resulting entry text.</p>
+<h2>7. Phone payments</h2>
+<ul>
+<li><strong>iPhone:</strong> if you set up an automation in the Shortcuts app, after an Apple Pay payment the system passes the amount, shop name and card name to the app. The data goes only to your ledger.</li>
+<li><strong>Android:</strong> if you grant notification access, the app reads only Google Wallet payment notifications. It does not open, store or send any other notifications.</li>
+</ul>
+<p>You can turn this off at any time in your phone settings.</p>
+<h2>8. Files and reports you send yourself</h2>
+<p>You open or save broker reports, backups, CSV exports, photos and invoices yourself, through the system file picker or "Share". Broker reports are read on the phone. Backups and exports go wherever you save or send them and do not pass through our servers.</p>
+<p>When you send "Report a bug" yourself, we store your description, app version, phone system and account ID on the server to fix the problem. We don't attach entries or other app data. Reports are deleted with your account.</p>
+<h2>9. Notifications, camera and other permissions</h2>
+<ul>
+<li><strong>Notifications:</strong> reminders are scheduled on the phone. We do not send notifications from a server.</li>
+<li><strong>Camera:</strong> only for scanning receipts and the QR code of a shared-budget invitation.</li>
+<li><strong>Photos:</strong> only when you pick a photo yourself or save a receipt photo to your gallery.</li>
+</ul>
+<h2>10. Market data</h2>
+<p>The app downloads bond, inflation and ETF prices from public files on GitHub. As with any internet connection, GitHub sees the device's IP address. No data about your savings is sent. Current prices of the instruments in your savings jars are downloaded directly from Yahoo Finance: Yahoo then sees your device's IP address and the instrument's name, but no amounts.</p>
+<h2>11. Rewarded ads</h2>
+<p>On the free plan you can choose to watch an ad to get an extra receipt or unlock a feature for an hour. An ad never appears unless you tap to watch it, and the premium plan has no ads.</p>
+<p>Ads are provided by Google (AdMob). The ad library only starts when you choose "Watch an ad" and, where required, give consent in the consent window. Google may then process device data, your IP address and ad display data, for example to deliver and measure the ad and to prevent abuse. The legal basis is your consent, which you can change or withdraw in Settings under "Ad consent".</p>
+<p>Ads are not personalised. We don't pass entries, amounts, categories, your email address or account ID to Google, only a one-time number that confirms the ad was watched.</p>
+<h2>12. What we don't do</h2>
+<ul>
+<li>We don't sell data or give advertisers information about your finances.</li>
+<li>We don't use personalised ads, analytics or cross-app tracking.</li>
+<li>We don't connect to your bank and never know your banking logins or passwords.</li>
+</ul>
+<h2>13. Recipients</h2>
+<p>Only providers needed to run the service process data on our behalf:</p>
+<ul>
+<li><strong>Supabase</strong> (database, sign-in and app server, servers in the EU),</li>
+<li><strong>Google</strong> (Google sign-in, Gemini model, speech recognition on Android, rewarded ads, where it also acts as an independent controller),</li>
+<li><strong>Apple</strong> (speech recognition on iPhone, Shortcuts automations),</li>
+<li><strong>GitHub</strong> (market data files).</li>
+</ul>
+<p>Some of these companies are based in the USA. Where data leaves the European Economic Area, this is based on the European Commission's adequacy decision (EU-US Data Privacy Framework) or standard contractual clauses.</p>
+<h2>14. Your rights</h2>
+<p>You have the right to:</p>
+<ul>
+<li>access your data and get a copy,</li>
+<li>rectify your data,</li>
+<li>erase your data,</li>
+<li>restrict processing,</li>
+<li>data portability (CSV export and backup in Settings),</li>
+<li>object to processing,</li>
+<li>withdraw consent at any time, without affecting earlier processing,</li>
+<li>lodge a complaint with the President of the Personal Data Protection Office (UODO, ul. Stawki 2, 00-193 Warsaw, Poland) or the authority in your country.</li>
+</ul>
+<p>You can do most of this yourself in the app: edit and delete entries, export data and delete your account. For anything else, write to <strong>domlip12@icloud.com</strong>. We reply within one month.</p>
+<h2>15. Children</h2>
+<p>The app is intended for people aged 16 or over. We do not knowingly collect data from younger children.</p>
+<h2>16. Security</h2>
+<p>Connections to the server are encrypted. On the server, each ledger is separated by access rules, and keys to external services are kept only on the server. Data on your phone is protected first of all by your device's screen lock.</p>
+<h2>17. Changes</h2>
+<p>When we change this policy, we will update the date at the top and tell you about significant changes in the app.</p>
+</main>
+</body>
+</html>

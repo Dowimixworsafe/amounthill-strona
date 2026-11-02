@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Usuwanie konta AmouNTHILL</title>
+<style>
+  :root {
+    --bg: #5A4232; --surface: #4C3829; --high: #6A4F3D;
+    --ink: #FBF6EC; --muted: #D3C2AC; --accent: #A9C98E; --on-accent: #2E2A24;
+    --cut: 8px;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.55 Figtree, system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .lead { color: var(--muted); margin: 0 0 28px; }
+  details {
+    background: var(--surface); margin: 0 0 12px;
+    clip-path: polygon(12px 0, calc(100% - 12px) 0, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px), 0 12px);
+  }
+  summary {
+    cursor: pointer; list-style: none; padding: 16px 18px;
+    font-weight: 700; font-size: 18px; display: flex; align-items: center; gap: 12px;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "▾"; margin-left: auto; color: var(--muted); transition: transform .2s; }
+  details[open] summary::after { transform: rotate(180deg); }
+  .hex {
+    width: 30px; height: 34px; flex-shrink: 0; background: var(--accent); color: var(--on-accent);
+    display: grid; place-items: center; font-size: 14px; font-weight: 800;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  .body { padding: 0 18px 18px; }
+  ol { margin: 0; padding-left: 22px; }
+  li { margin: 0 0 10px; }
+  li::marker { color: var(--accent); font-weight: 700; }
+  b { color: var(--ink); }
+  .path { color: var(--muted); }
+  a { color: var(--accent); font-weight: 700; }
+  .note {
+    background: var(--high); padding: 12px 14px; margin: 12px 0 0; color: var(--ink);
+    clip-path: polygon(var(--cut) 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, var(--cut) 100%, 0 calc(100% - var(--cut)), 0 var(--cut));
+  }
+  h2 { font-size: 15px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 32px 0 12px; }
+  footer { color: var(--muted); font-size: 14px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Usuwanie konta AmouNTHILL</h1>
+<p>Konto w AmouNTHILL jest opcjonalne. Bez logowania aplikacja działa w całości na Twoim telefonie i nie ma czego usuwać z serwera.</p>
+<h2>W aplikacji</h2>
+<ol>
+<li>Otwórz AmouNTHILL i wejdź w Ustawienia.</li>
+<li>Przytrzymaj pozycję „Usuń konto”.</li>
+<li>Wybierz, co zrobić z danymi na tym telefonie, i potwierdź.</li>
+</ol>
+<h2>Bez aplikacji</h2>
+<p>Napisz na <a href="mailto:domlip12@icloud.com">domlip12@icloud.com</a> z adresu powiązanego z kontem. Usuniemy je w ciągu 30 dni.</p>
+<h2>Co znika</h2>
+<p>Z serwera usuwamy adres e-mail, identyfikator konta, zsynchronizowane wpisy, kategorie i skarbonki, zapisane rozmowy z Mou oraz zgłoszenia błędów. Gdy właściciel wspólnego budżetu usuwa konto, domownicy dostają kopię wpisów, które sami dodali.</p>
+<h2>Co zostaje</h2>
+<p>Statystyki użycia nie są powiązane z kontem, więc usunięcie konta ich nie obejmuje. Usuniesz je, wyłączając „Statystyki użycia” w Ustawieniach, a pozostałe wiersze znikają same po 13 miesiącach. Dane na telefonie zostają tylko wtedy, gdy tak wybierzesz.</p>
+</main>
+</body>
+</html>
